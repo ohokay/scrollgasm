@@ -5,7 +5,7 @@
       duration : 300,
       after : function() {}
     }
-    this.each(function() {
+    return this.each(function() {
       var config = $.extend(defaults, opts || {});
       var distance = (($("body").scrollTop()-$(this).offset().top)+config.offset)*-1;
       $("body, html").animate({
@@ -13,6 +13,5 @@
       }, config.duration, config.after);
       return self;
     });        
-    return this;
   };
 })(jQuery);
