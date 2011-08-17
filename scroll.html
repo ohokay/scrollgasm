@@ -5,23 +5,23 @@
   <meta charset="utf-8">
   <title></title>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-  <script src="jquery.scrollgasim.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jquery.scrollgasm.js" type="text/javascript" charset="utf-8"></script>
   
   <script type="text/javascript" charset="utf-8">
     $(function() {      
       $("a#top").click(function(e) {
         e.preventDefault();
-        $("#bottom").scrollgasim({ offset : 200, 'duration' : 1000 });
+        $("#bottom").scrollgasm({ offset : 200, 'duration' : 1000 });
       });
       
       $("a#middle").click(function(e) {
         e.preventDefault();
-        $("#top").scrollgasim({ 'offset' : 10, 'duration' : 3000 });
+        $("#top").scrollgasm({ 'offset' : 10, 'duration' : 3000 });
       });
       
       $("a#bottom").click(function(e) {
         e.preventDefault();
-        $("#middle").scrollgasim({ 'offset' : 10 });
+        $("#middle").scrollgasm({ 'offset' : 10 });
       });
       
     });

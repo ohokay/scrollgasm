@@ -1,5 +1,5 @@
 ;(function($) {
-  $.fn.scrollgasim = function(opts) {
+  $.fn.scrollgasm = function(opts) {
     var defaults = {
       offset : 0,
       duration : 300,
@@ -12,6 +12,6 @@
         scrollTop : '+=' + distance
       }, config.duration, config.after);
       return self;
-    });        
+    });
   };
 })(jQuery);
